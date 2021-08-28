@@ -54,7 +54,6 @@ func main() {
 			}
 		} else {
 			_ = c.Close()
-			//fmt.Print(dur, " :")
 			fmt.Printf("%.4v connect from: %s to: %s \n", dur, c.LocalAddr().String(), c.RemoteAddr().String())
 		}
 		time.Sleep(*interval)
